@@ -23,7 +23,7 @@ const isNotEmpty = require("./middleware/isNotEmpty");
 const recorder = require("./middleware/recorder");
 const verifyToken = require("./middleware/verifyToken");
 
-const PORT = process.env.PORT;
+const PORT = process.env.PORTDB;
 
 app.use(cors());
 app.options('*',cors());
