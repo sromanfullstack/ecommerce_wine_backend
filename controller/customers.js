@@ -20,7 +20,7 @@ const addUser = async ({ name, phone, email, password }) => {
     return newUser;
   } catch (error) {
     console.error(error);
-    throw new Error("Unable to add user to database");
+    throw new Error("Unable to add users to database");
   }
 };
 
