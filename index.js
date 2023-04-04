@@ -26,6 +26,7 @@ const verifyToken = require("./middleware/verifyToken");
 const PORT = process.env.PORT;
 
 app.use(cors());
+app.options('*',cors());
 app.use(express.json());
 
 app.post("/customers", recorder, async (req, res) => {

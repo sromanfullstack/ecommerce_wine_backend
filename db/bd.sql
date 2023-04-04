@@ -69,12 +69,6 @@ INSERT INTO customers (name, phone, email, password) VALUES
 ('seba5',959879568,'sebthomson5@gmail.com', 'aaa127');
 SELECT * FROM customers;
 
-INSERT INTO products (name, sku, price, stock, imageurl, category, description) VALUES
-('sauvignon','00001',15000, 500, 'https://dondelanegra.cl/wp-content/uploads/2022/03/1865-Cabernet-Sauvignon-750cc.jpg','mujer','Perfume rosa olor a camelias'),
-('Produc2','00002',25000, 500, 'https://dondelanegra.cl/wp-content/uploads/2022/05/Apaltagua-Cabernet-Sauvignon-Select-Reserve.jpg  ','hombre','Perfume azul olor a manzana'),
-('Produc3','00003',35000, 600, 'wwww.jpg3','mujer','Perfume rosa olor a melon'),
-('Produc4','00004',45000, 700, 'wwww.jpg4','hombre','Perfume rosa olor a madera');
-
 
 INSERT INTO products (name, sku, price, stock, imageurl, category, description) VALUES
 ('vina san pedro',0001, 10990, 100, 'https://dondelanegra.cl/wp-content/uploads/2022/03/1865-Cabernet-Sauvignon-750cc.jpg','cabernet','sauvignon'),
