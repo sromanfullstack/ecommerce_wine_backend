@@ -23,7 +23,6 @@ const isNotEmpty = require("./middleware/isNotEmpty");
 const recorder = require("./middleware/recorder");
 const verifyToken = require("./middleware/verifyToken");
 
-const PORT = process.env.PORTDB;
 
 app.use(cors());
 app.options('*',cors());
@@ -170,4 +169,7 @@ app.get("*", recorder, (req, res) => {
     .json({ message: "the path you are trying to access does not exist" });
 });
 
-app.listen(PORT, console.log(`Server is running on the port : ${PORT}}`));
+
+app.listen(process.env.PORT || 3000, () => {
+  console.log(`Server is running on port ${process.env.PORT || 3000}`);
+});
